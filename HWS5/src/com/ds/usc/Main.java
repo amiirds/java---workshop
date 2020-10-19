@@ -278,10 +278,10 @@ public class Main {
                             System.out.println("All set you've been registered and you can't reserve another trip");
                         }
                         else System.out.println("you all ready registered one of our trip ");
-                        break;
                     default:
                         System.out.println("wrong entry try 1-10");
                 }
+                break;
             case 2:
                 System.out.println("Enter your name for registration ");
                 String name2 = input.next();
