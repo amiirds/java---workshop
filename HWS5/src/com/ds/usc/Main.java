@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         travel_property travel_property1 = new travel_property();
         int choice;
@@ -295,7 +295,7 @@ public class Main {
                         && !name2.equals(travel_property8.people_list)
                         && !name2.equals(travel_property9.people_list)
                         && !name2.equals(travel_property10.people_list)){
-                    System.out.println("you not reserve any trip yet");
+                   throw new Exception("you not reserve any trip yet");
                 }
                 else System.out.println("you canceled your trip");
                 break;
