@@ -302,6 +302,5 @@ public class Main {
             default:
                 System.out.println("wrong entry try 1-2");
         }
-
     }
 }
