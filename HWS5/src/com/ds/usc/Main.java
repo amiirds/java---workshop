@@ -12,64 +12,82 @@ public class Main {
         Scanner input = new Scanner(System.in);
         travel_property travel_property1 = new travel_property();
         travel_property travel_property = new travel_property();
-        List<String> list = new ArrayList <> ();
-        list.addAll(Arrays.asList("amirreza","amir","reza","ali","hossein","mamad","noshin","elham","hadi","alireza"));
-        travel_property.people_list  = list;
         int choice;
+        travel_property.list.addAll(Arrays.asList("amirreza","amir","reza","ali","hossein"));
+        travel_property1.people_list  = travel_property.list;
         travel_property1.origin = "tehran";
         travel_property1.destination = "shiraz";
         travel_property1.car = ("benz");
 
 
         travel_property travel_property2 = new travel_property();
+        travel_property.list.addAll(Arrays.asList("hassan"));
+        travel_property2.people_list  = travel_property.list;
+
         travel_property2.origin = "tehran";
         travel_property2.destination = "esfehan";
         travel_property2.car = ("bmw");
 
 
         travel_property travel_property3 = new travel_property();
+        travel_property.list.addAll(Arrays.asList("zeynab"));
+        travel_property3.people_list  = travel_property.list;
         travel_property3.origin = "esfehan";
         travel_property3.destination = "mashhad";
         travel_property3.car = ("peride");
 
 
         travel_property travel_property4 = new travel_property();
+        travel_property.list.addAll(Arrays.asList());
+        travel_property4.people_list  = travel_property.list;
         travel_property4.origin = "qom";
         travel_property4.destination = "shiraz";
         travel_property4.car = ("405");
 
 
         travel_property travel_property5 = new travel_property();
+        travel_property.list.addAll(Arrays.asList("qoli"));
+        travel_property5.people_list  = travel_property.list;
         travel_property5.origin = "shiraz";
         travel_property5.destination = "qom";
         travel_property5.car = ("207");
 
 
         travel_property travel_property6 = new travel_property();
+        travel_property.list.addAll(Arrays.asList("gholi"));
+        travel_property6.people_list  = travel_property.list;
         travel_property6.origin = "yazd";
         travel_property6.destination = "shiraz";
         travel_property6.car = ("E305");
 
 
         travel_property travel_property7 = new travel_property();
+        travel_property.list.addAll(Arrays.asList("majid"));
+        travel_property7.people_list  = travel_property.list;
         travel_property7.origin = "tehran";
         travel_property7.destination = "istanbul";
         travel_property7.car = ("2008");
 
 
         travel_property travel_property8 = new travel_property();
+        travel_property.list.addAll(Arrays.asList("mohammad"));
+        travel_property8.people_list  = travel_property.list;
         travel_property8.origin = "tehran";
         travel_property8.destination = "urumie";
         travel_property8.car = ("yaris");
 
 
         travel_property travel_property9 = new travel_property();
+        travel_property.list.addAll(Arrays.asList("mahdad"));
+        travel_property9.people_list  = travel_property.list;
         travel_property9.origin = "yazd";
         travel_property9.destination = "qazvin";
         travel_property9.car = ("206");
 
 
         travel_property travel_property10 = new travel_property();
+        travel_property.list.addAll(Arrays.asList("soleyman"));
+        travel_property10.people_list  = travel_property.list;
         travel_property10.origin = "kordestan";
         travel_property10.destination = "ahvaz";
         travel_property10.car = ("camery");
@@ -97,7 +115,7 @@ public class Main {
                     case 8:
                     case 9:
                     case 10:
-                        if (list.contains(name)){
+                        if (travel_property.list.contains(name)){
                             System.out.println("you all ready registered one of our trip ");
                         }
                         else
@@ -111,7 +129,7 @@ public class Main {
             case 2:
                 System.out.println("Enter your name for registration ");
                 String name2 = input.next();
-                if (list.contains(name2)){
+                if (travel_property.list.contains(name2)){
                     System.out.println("you canceled your trip");
                 }
                 else
