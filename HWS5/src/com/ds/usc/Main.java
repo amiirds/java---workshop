@@ -1,17 +1,14 @@
 package com.ds.usc;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        travel_property travel_property1 = new travel_property();
         travel_property travel_property = new travel_property();
+        travel_property travel_property1 = new travel_property();
         int choice;
         travel_property.list.addAll(Arrays.asList("amirreza","amir","reza","ali","hossein"));
         travel_property1.people_list  = travel_property.list;
@@ -87,10 +84,16 @@ public class Main {
 
         travel_property travel_property10 = new travel_property();
         travel_property.list.addAll(Arrays.asList("soleyman"));
-        travel_property10.people_list  = travel_property.list;
+        travel_property10.people_list =travel_property.list;
+        System.out.println(travel_property10.people_list);
         travel_property10.origin = "kordestan";
         travel_property10.destination = "ahvaz";
         travel_property10.car = ("camery");
+
+        List<travel_property> travellist = new ArrayList<>();
+        travellist.addAll(Arrays.asList(travel_property1,travel_property2,
+                travel_property3,travel_property4,travel_property5,travel_property6,travel_property7,
+                travel_property8,travel_property9,travel_property10));
 
 
         System.out.println("************* Bus Terminal ***********");
@@ -115,11 +118,11 @@ public class Main {
                     case 8:
                     case 9:
                     case 10:
-                        if (travel_property.list.contains(name)){
-                            System.out.println("you all ready registered one of our trip ");
-                        }
-                        else
-                            System.out.println("All set you've been registered and you can't reserve another trip");
+
+                            if (travel_property.list.contains(name)) {
+                                System.out.println("you all ready registered one of our trip ");
+                            } else
+                                System.out.println("All set you've been registered and you can't reserve another trip");
 
                         break;
                     default:
@@ -137,6 +140,7 @@ public class Main {
                 break;
             default:
                 System.out.println("wrong entry try 1-2");
+
         }
     }
 }

@@ -11,5 +11,4 @@ public class travel_property<origin,destination,car,people_list> {
     public people_list people_list;
     List<String> list = new ArrayList<>();
 
-
 }
