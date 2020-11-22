@@ -1,6 +1,4 @@
-/*
- * Created by JFormDesigner on Sun Nov 01 01:20:51 IRST 2020
- */
+
 
 package com.ds.usc;
 
@@ -35,6 +33,7 @@ public class Member extends JFrame {
         button2 = new JButton();
         lblmember3 = new JLabel();
         button3 = new JButton();
+
 
         //======== this ========
         setTitle("choosing member");
@@ -120,5 +119,6 @@ public class Member extends JFrame {
     private JButton button2;
     private JLabel lblmember3;
     private JButton button3;
+    
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }
