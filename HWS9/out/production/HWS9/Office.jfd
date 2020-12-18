@@ -1,0 +1,64 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq t {par t {seq {space :p:102:p, comp textField_name:::::x}, seq l {par l {comp label4::l:p::p, comp label3::l:p::p, comp label2::l:p::p}, par l {seq {space :p:24:p, comp comboBox_id::::181:x}, seq l {space s:::p, comp comboBox_job:::::x}, seq l {space :p:18:p, comp comboBox_age:::::x}}}}, space :p:193:p}, seq {par l {comp label1:::p:63:p, seq l {space :p:9:p, comp button_add:::p:142:p, space u:::p, comp button_edit:::p:142:p, space u:::p, comp button_delete:::p:126:p}}, space ::39:x}}}}"
+			"$verticalGroup": "par l {seq t {space ::41:x, par b {comp label2::b:p::p, comp comboBox_id::b:p::p}, space s:::p, par b {comp label1::b:p:32:p, comp textField_name::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp comboBox_age::b:p::p}, space :p:26:p, par b {comp label4::b:p::p, comp comboBox_job::b:p::p}, space s:::p, par b {comp button_add::b:p:58:p, comp button_edit::b:p:58:p, comp button_delete::b:p:58:p}, space :p:24:p}}"
+		} ) {
+			name: "this"
+			"title": "Office Managment"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_edit"
+				"text": "Edit (with id)"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_editActionPerformed", false ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_delete"
+				"text": "Delete"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_deleteActionPerformed", false ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_add"
+				"text": "Add"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_addActionPerformed", false ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Name ="
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "ID ="
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Age = "
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Job title = "
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_name"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox_id"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox_age"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox_job"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 0 )
+			"size": new java.awt.Dimension( 490, 385 )
+		} )
+	}
+}
