@@ -1,1 +1,1 @@
-some of the java code for training.
+some Java exercises for training.
